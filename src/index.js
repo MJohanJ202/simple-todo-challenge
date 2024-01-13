@@ -70,7 +70,7 @@ $listTodo?.addEventListener("click", (event) => {
 
 const renderNotes = () => {
   let notes = JSON.parse(localStorage.getItem("notes"))
-  const hasVeryFewNotes = notes.length === 0
+  const hasVeryFewNotes = notes?.length === 0
   if(notes === null || hasVeryFewNotes) {
     localStorage.setItem("notes", "[]")
     setDefaultNotes(hasVeryFewNotes);
