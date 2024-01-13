@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <title>Todo Interview</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="header__title">Mis Notas</h1>
+  </header>
+  <main class="main">
+    <section class="todo">
+      <header>
+        <form class="todo__form" id="todo-form">
+          <textarea class="todo__description" minlength="1" maxlength="1000" required name="description"
+            placeholder="Algo para recordar..."></textarea>
+          <button class="btn" type="submit">Crear</button>
+        </form>
+      </header>
+      <section>
+        <ul class="todo-list" id="todo-list"></ul>
+      </section>
+    </section>
+  </main>
+  <script type="module" src="src/index.js"></script>
+</body>
+
+</html>
